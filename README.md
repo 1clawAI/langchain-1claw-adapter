@@ -99,6 +99,7 @@ The interface is intentionally narrow — three methods (`submit_intent`, `get_p
 - `src/langchain_1claw/intent.py` — `Intent`, `IntentResult`, `IntentDeniedError` types
 - `src/langchain_1claw/tool.py` — `VaultBackedTool` (LangChain `BaseTool` subclass)
 - `examples/paid_api_call.py` — end-to-end example with policy denial demo
+- `examples/tier2_live_agent_demo.py` — a real LangChain agent (Claude Haiku) driving a multi-turn conversation through the vault, including an adversarial prompt asking it to leak the credential. See [`INTEGRATION_VERIFIED.md`](./INTEGRATION_VERIFIED.md#tier-2--live-llm-agent-adversarial-prompt-included) for the full transcript and result.
 - `tests/` — sanity tests
 
 ## Roadmap
